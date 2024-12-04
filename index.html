@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Numbers with Life</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button id="back-button">← Back</button>
+
+  <div id="home">
+    <h1>Numbers with Life</h1>
+    <p>Select a number sequence to explore its connection to the natural world:</p>
+    <ul id="number-list">
+      <li data-sequence="fibonacci">Fibonacci Sequence</li>
+      <li data-sequence="prime">Prime Numbers</li>
+      <li data-sequence="golden-ratio">Golden Ratio</li>
+      <li data-sequence="triangular">Triangular Numbers</li>
+      <li data-sequence="euler">Euler's Number</li>
+      <li data-sequence="lucas">Lucas Numbers</li>
+    </ul>
+  </div>
+
+  <div id="container"></div>
+
+  <div class="overlay" id="description">
+    <h2 id="sequence-title">Sequence Title</h2>
+    <p id="sequence-description">Description of the selected sequence.</p>
+  </div>
+
+  <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

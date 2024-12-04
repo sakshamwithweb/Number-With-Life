@@ -1,0 +1,99 @@
+    body {
+        margin: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        background-color: #111;
+        color: #fff;
+    }
+
+    #container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    #home {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    #home h1 {
+        margin-top: 0;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    #number-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    #number-list li {
+        margin: 10px 0;
+        cursor: pointer;
+        padding: 10px;
+        background: #222;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    #number-list li:hover {
+        background: #333;
+    }
+
+    #back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px 15px;
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        z-index: 2;
+        transition: background 0.3s;
+    }
+
+    #back-button:hover {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .overlay {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        border-radius: 8px;
+        max-width: 300px;
+        display: none;
+    }
+
+    .overlay h2 {
+        margin-top: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .overlay p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .dg.ac {
+        z-index: 3;
+    }
